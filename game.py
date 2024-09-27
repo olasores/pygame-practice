@@ -10,8 +10,11 @@ pygame.init()
 # set mode needs at least one arg - width and height
 screen = pygame.display.set_mode((800, 400))
 
+
 #update pygame windo titltle 
 pygame.display.set_caption("Runner")
+# create a clock object - helps with time and frame rate 
+clock  = pygame.time.Clock()
 
 # going to run forever
 
@@ -28,3 +31,5 @@ while True:
             exit()
     #updates the display surface
     pygame.display.update()
+    # the clock tells the while loop not to run more than 60 seconds 
+    clock.tick(60)
