@@ -21,11 +21,11 @@ test_font = pygame.font.Font(None, 50)
 # adding color to surface 
 # test_surface.fill('Red')
 
-new_surface = pygame.image.load('background.jpg')
+new_surface = pygame.image.load('background.jpg').convert_alpha()
 # render takes 3 bits of information text, quality of text, color
 text_surface = test_font.render('my game', False, "Green")
 
-snail_surface = pygame.image.load("snail.png")
+snail_surface = pygame.image.load("snail.png").convert_alpha()
 
 #update pygame windo titltle 
 pygame.display.set_caption("Runner")
